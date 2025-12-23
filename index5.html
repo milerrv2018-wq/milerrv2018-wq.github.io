@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Entradas | Chavín de Huántar</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #fdfbf7;
+        }
+        h1, h2 {
+            font-family: 'Cinzel', serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center px-6">
+
+    <div class="max-w-3xl w-full bg-white shadow-2xl rounded-xl overflow-hidden">
+
+        <!-- HEADER -->
+        <div class="bg-[#2f4f4f] text-white text-center py-8">
+            <h1 class="text-4xl tracking-widest text-[#b8860b]">CHAVÍN</h1>
+            <p class="text-white/80 mt-2">Compra oficial de entradas</p>
+        </div>
+
+        <!-- FORM -->
+        <form class="p-10 space-y-6">
+
+            <!-- DATOS PERSONALES -->
+            <div>
+                <h2 class="text-2xl font-bold text-[#b8860b] mb-4">Datos del visitante</h2>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Nombre completo" required
+                        class="border rounded px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-[#b8860b]">
+
+                    <input type="email" placeholder="Correo electrónico" required
+                        class="border rounded px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-[#b8860b]">
+                </div>
+            </div>
+
+            <!-- FECHA -->
+            <div>
+                <label class="block mb-2 font-semibold text-gray-700">Fecha de visita</label>
+                <input type="date" required
+                    class="border rounded px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-[#b8860b]">
+            </div>
+
+            <!-- TIPO DE ENTRADA -->
+            <div>
+                <label class="block mb-2 font-semibold text-gray-700">Tipo de entrada</label>
+                <select class="border rounded px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-[#b8860b]">
+                    <option>Entrada General - S/ 15.00</option>
+                    <option>Estudiantes - S/ 8.00</option>
+                    <option>Niños - S/ 5.00</option>
+                    <option>Adulto Mayor - S/ 5.00</option>
+                </select>
+            </div>
+
+            <!-- CANTIDAD -->
+            <div>
+                <label class="block mb-2 font-semibold text-gray-700">Cantidad</label>
+                <input type="number" min="1" value="1"
+                    class="border rounded px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-[#b8860b]">
+            </div>
+
+            <!-- RESUMEN -->
+            <div class="bg-gray-100 p-6 rounded-lg">
+                <h3 class="font-bold text-lg mb-2">Resumen de compra</h3>
+                <p class="text-gray-600">Lugar: Chavín de Huántar</p>
+                <p class="text-gray-600">Horario: 9:00 a.m. - 4:00 p.m.</p>
+                <p class="font-bold mt-2 text-[#2f4f4f]">Total aproximado: S/ 15.00</p>
+            </div>
+
+            <!-- BOTÓN -->
+            <button type="submit"
+                class="w-full bg-[#b8860b] text-white py-4 rounded-lg font-bold tracking-wide hover:bg-[#a07508] transition">
+                CONFIRMAR COMPRA
+            </button>
+                            <button style="background-color: #d4af37; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-family: serif; font-size: 14px; font-weight: bold; cursor: pointer;">
+                    <a href="index.html" style="color: white; text-decoration: none;">Volver al inicio</a>
+                </button>
+            </div>
+
+        </form>
+
+        <!-- FOOTER -->
+        <div class="text-center py-4 text-sm text-gray-500">
+            © 2025 Chavín de Huántar – Sitio oficial
+        </div>
+    </div>
+
+</body>
+</html>

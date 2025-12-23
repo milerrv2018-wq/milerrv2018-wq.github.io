@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chavín de Huántar - Legado Milenario</title>
+    <link rel="icon" href="img/cabeza-clava-escudo-de-guerra-600w-1874107021-removebg-preview.png" type="image/x-icon">
+
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>  
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --font-serif: 'Cinzel', serif;
+            --font-sans: 'Lato', sans-serif;
+            --gold: #b8860b;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: #fdfbf7;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-serif);
+        }
+
+        /* Animación */
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ZOOM IMÁGENES */
+        .img-container {
+            overflow: hidden;
+        }
+
+        .img-zoom {
+            transition: transform 0.8s ease;
+        }
+
+        .img-container:hover .img-zoom {
+            transform: scale(1.15);
+        }
+
+        .text-shadow {
+            text-shadow: 0 4px 6px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b">
+    <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+        <div class="text-2xl font-bold text-[var(--gold)] tracking-widest">CHAVÍN</div>
+        <div class="hidden md:flex space-x-8 text-sm">
+            <a href="#historia" class="hover:text-[var(--gold)]">HISTORIA</a>
+            <a href="#monumentos" class="hover:text-[var(--gold)]">MONUMENTOS</a>
+        </div>
+        <a href="index5.html">
+        <button class="border border-[var(--gold)] text-[var(--gold)] px-6 py-2 rounded hover:bg-[var(--gold)] hover:text-white transition">
+            COMPRAR ENTRADAS
+        </button>
+        </a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative h-screen flex items-center justify-center bg-black">
+    <div class="absolute inset-0 img-container">
+        <img src="img/AdobeStock_168214729_Preview.jpeg" class="w-full h-full object-cover opacity-60 img-zoom">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-[#fdfbf7]"></div>
+    </div>
+
+    <div class="relative z-10 text-center text-white animate-fade-in-up px-6">
+        <h2 class="tracking-[0.3em] text-[#e6a34a] mb-4">PATRIMONIO DE LA HUMANIDAD</h2>
+        <h1 class="text-6xl md:text-8xl font-bold text-shadow mb-6">CHAVÍN DE<br>HUÁNTAR</h1>
+        <p class="text-xl max-w-3xl mx-auto">
+            El centro ceremonial donde nació la civilización andina hace más de 3,000 años.
+        </p>
+    </div>
+</section>
+
+<!-- HISTORIA -->
+<section id="historia" class="py-24">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-5xl font-bold text-[var(--gold)] mb-6">El Centro del Mundo</h2>
+            <p class="text-gray-600 text-lg mb-4">
+                Chavín de Huántar fue uno de los principales centros religiosos del mundo andino. 
+                Su ubicación estratégica permitió integrar culturas de la costa, sierra y selva.
+            </p>
+            <p class="text-gray-600 text-lg">
+                Los sacerdotes usaban arquitectura, sonido y simbolismo para generar poder espiritual,
+                consolidando una religión panandina que influyó durante siglos.
+            </p>
+        </div>
+
+        <div class="rounded-lg shadow-2xl img-container h-[500px]">
+            <a href="index4.html"><button class="w-full h-full bg-transparent border-none cursor-pointer">
+                <img src="img/ch.jpeg" class="w-full h-full object-cover img-zoom">
+            </button></a>
+        </div>
+    </div>
+</section>
+
+<!-- MONUMENTOS -->
+<section id="monumentos" class="py-24 bg-gray-100">
+    <div class="container mx-auto px-6">
+        <h2 class="text-center text-5xl font-bold text-[var(--gold)] mb-16">
+            Tesoro Arqueológico
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+            <!-- LANZÓN -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="h-80 img-container">
+                    <img src="img/lanzon.jpg" class="w-full h-full object-cover img-zoom">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">El Lanzón Monolítico</h3>
+                    <p class="text-gray-600">
+                        Escultura central del templo, representa a la divinidad suprema con rasgos felinos,
+                        serpientes y colmillos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CABEZAS -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="h-80 img-container">
+                    <img src="img/56.jpeg" class="w-full h-full object-cover img-zoom">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">Cabezas Clavas</h3>
+                    <p class="text-gray-600">
+                        Representan la transformación chamánica del sacerdote, mitad humano mitad animal.
+                    </p>
+                </div>
+            </div>
+
+            <!-- ESTELA -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="h-80 img-container">
+                    <img src="img/descarga.jpeg" class="w-full h-full object-cover img-zoom">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">Estela Raimondi</h3>
+                    <p class="text-gray-600">
+                        Obra maestra del arte lítico, muestra al Dios de los Báculos con compleja simbología.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#2f4f4f] text-white py-12 text-center">
+    <h2 class="text-2xl font-bold text-[var(--gold)] mb-4">CHAVÍN</h2>
+    <p class="text-white/50 text-sm">© 2025 Chavín de Huántar</p>
+</footer>
+
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>
+
+ 
+
